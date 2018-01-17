@@ -1,1 +1,1 @@
-Configuration done!
+Configuration done!(delwar)
