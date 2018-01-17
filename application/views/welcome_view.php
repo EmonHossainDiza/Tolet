@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html>
@@ -67,3 +68,6 @@
 
 </body>
 </html>
+=======
+Configuration done!(delwar)
+>>>>>>> 9fe1198794455cb15f0d3e62fc8cddee5b7fbb0e
