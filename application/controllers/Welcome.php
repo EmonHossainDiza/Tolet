@@ -9,6 +9,7 @@ class Welcome extends CI_Controller {
 
         $ip = $this->input->ip_address();
         $result = json_decode(file_get_contents("http://freegeoip.net/json/{$ip}"));
+        //$this->Login_model->dd($result);
         echo $result->ip;
         echo $result->country_name;
         echo $result->city;

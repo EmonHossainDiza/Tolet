@@ -6,7 +6,6 @@ class Login extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('Login_model');
     }
 
     public function index()
@@ -16,9 +15,9 @@ class Login extends CI_Controller {
 
     public function verify()
     {
-        $email= $this->input->post('email');
-        $password= $this->input->post('password');
-        $result=$this->Login_model->login($email);
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+        $result = $this->Login_model->login($email);
 
         if (!empty($result)) {
 
@@ -30,13 +29,16 @@ class Login extends CI_Controller {
                     'login_ip' => $this->input->ip_address(),
                     'user_id' => $result->user_id,
                 );
-                $this->db->insert('tbl_login', $data);
+                $login_id=$this->Login_model->insert_login($data);
 
                 $result->res=$this->Login_model->login($email);
+
+                //$this->Login_model->dd($result->res);
 
                 $this->session->set_userdata('login_type',"$result->user_type");
                 $this->session->set_userdata('login_emails',"$result->user_email");
                 $this->session->set_userdata('login_user_id',"$result->user_id");
+                $this->session->set_userdata('login_id',"$login_id");
 
 
                 $this->load->view('profile_view',$result);
@@ -48,13 +50,14 @@ class Login extends CI_Controller {
                     'login_ip' => $this->input->ip_address(),
                     'user_id' => $result->user_id,
                 );
-                $this->db->insert('tbl_login', $data);
+                $login_id=$this->Login_model->insert_login($data);
 
                 $result->res=$this->Login_model->login($email);
 
                 $this->session->set_userdata('login_type',"$result->user_type");
                 $this->session->set_userdata('login_emails',"$result->user_email");
                 $this->session->set_userdata('login_user_id',"$result->user_id");
+                $this->session->set_userdata('login_id',"$login_id");
 
 
                 $this->load->view('profile_view',$result);
