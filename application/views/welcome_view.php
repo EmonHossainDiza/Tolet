@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>map</title>
 </head>
-<body>
+<br>
 <p id="demo">Click the button to get your position.</p>
 
 
@@ -65,9 +63,8 @@
 
 
 </script>
+</br>
+<h2><a href="<?php echo base_url()?>Login">Login</a></h2>
 
 </body>
 </html>
-=======
-Configuration done!(delwar)
->>>>>>> 9fe1198794455cb15f0d3e62fc8cddee5b7fbb0e
