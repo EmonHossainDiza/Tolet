@@ -16,8 +16,10 @@ class Login_model extends CI_Model {
     }
 
     public function insert_login($data){
+
     	$this->db->insert('tbl_login', $data);
     	return $this->db->insert_id();
+
     }
 
 }

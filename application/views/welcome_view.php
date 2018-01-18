@@ -65,6 +65,8 @@
 </script>
 </br>
 <h2><a href="<?php echo base_url()?>Login">Login</a></h2>
+</br>
+<h2><a href="<?php echo base_url()?>Registration">Registration</a></h2>
 
 </body>
 </html>

@@ -10,7 +10,8 @@ class Login extends CI_Controller {
 
     public function index()
     {
-        $this->load->view("login_view");
+        $title['title']="Tolet | Login";
+        $this->load->view("login_view",$title);
     }
 
     public function verify()
@@ -32,6 +33,7 @@ class Login extends CI_Controller {
                 $login_id=$this->Login_model->insert_login($data);
 
                 $result->res=$this->Login_model->login($email);
+                $result->title="Tolet | User Profile";
 
                 //$this->Login_model->dd($result->res);
 
@@ -53,6 +55,7 @@ class Login extends CI_Controller {
                 $login_id=$this->Login_model->insert_login($data);
 
                 $result->res=$this->Login_model->login($email);
+                $result->title="Tolet | Admin Profile";
 
                 $this->session->set_userdata('login_type',"$result->user_type");
                 $this->session->set_userdata('login_emails',"$result->user_email");

@@ -55,8 +55,12 @@ $route['translate_uri_dashes'] = FALSE;
 
 // Login
 $route['Login'] = 'Login';
-$route['Login_verify'] = 'Login/verify';
+$route['Profile'] = 'Login/verify';
 
+//Registration
+$route['Registration'] = 'Registration';
+$route['Registration/Survey'] = 'Registration/add_reg';
+$route['Registration/Verification'] = 'Registration/verify';
 
 // Logout
 $route['Logout'] = 'Logout';
