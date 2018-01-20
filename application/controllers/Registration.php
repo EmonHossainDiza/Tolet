@@ -17,13 +17,22 @@ class Registration extends CI_Controller {
     public function add_reg()
     {
         $data=array(
-            $username = $this->input->post('uname'),
-            $email = $this->input->post('email'),
-            $phone = $this->input->post('phone'),
-            $password = password_hash($this->input->post('password'),PASSWORD_BCRYPT),
+            'user_name' => $this->input->post('uname'),
+            'user_email' => $this->input->post('email'),
+            'user_phone' => $this->input->post('phone'),
+            'user_password' => password_hash($this->input->post('password'),PASSWORD_BCRYPT),
         );
-        echo"<pre>";
-        print_r($data);
+
+        if ($this->db->insert('tbl_users', $data))
+        {
+            echo "ok";
+        }
+        else
+        {
+            $this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Please try again later!!!</div>');
+            redirect('Registration');
+        }
+
 
     }
 
