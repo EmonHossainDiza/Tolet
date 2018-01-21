@@ -54,7 +54,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <div>
+  <h4><a href="<?php echo base_url()?>Login">Login</a></h4>
+  </br>
+  <h4><a href="<?php echo base_url()?>Registration">Registration</a></h4>
+
+  <div>
       <?php 
         echo "<pre>";
         print_r($view_content_info); 
