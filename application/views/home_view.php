@@ -55,7 +55,6 @@
   </head>
   <body>
   <h4><a href="<?php echo base_url()?>Login">Login</a></h4>
-  </br>
   <h4><a href="<?php echo base_url()?>Registration">Registration</a></h4>
 
   <div>
