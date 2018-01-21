@@ -1,0 +1,228 @@
+
+
+
+/*========================================0.1 BASE CSS================================================================*/
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important
+}
+
+
+
+
+
+.admin_top_area {
+	background-color: #010124;
+}
+.admin_top {
+	padding: 10px 0px 15px 0px;
+}
+.admin_logo img {
+	width: 100px;
+	height: 50px;
+}
+
+.input_box {
+	width: 100%;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	height: 30px;
+	margin-bottom:10px;
+}
+.input_title {
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #000;
+	letter-spacing: 0.1px;
+	margin-bottom:2px;
+}
+
+.input_title i {
+	margin-right:5px;
+}
+
+.submit_btn {
+	float: right;
+	border: none;
+	background: #ddd;
+	color: #000;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	padding: 5px 30px 5px 30px;
+}
+
+.from_box a{
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #000;
+	letter-spacing: 0.1px;
+	margin-bottom:2px;
+	text-decoration:none;
+}
+
+
+.from_box_area h2 {
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #fff;
+	letter-spacing: 0.1px;
+	margin-bottom: 2px;
+	background-color: #010124;
+	text-align: center;
+	
+}
+
+.log_reg_box_area {
+	padding-top: 10%;
+}
+.from_box_area h2 {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+	color: #fff;
+	letter-spacing: 0.1px;
+	margin-bottom: 2px;
+	background-color: #010124;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	
+}
+.from_box {
+	border: 1px solid #ddd;
+	padding: 25px;
+}
+.recover_box {
+	height: 150px;
+}
+
+.login_box {
+	height: 210px;
+}
+
+.alter_sing ul li {
+	display: inline-block;
+	margin: 0px 3px;
+}
+.alter_sing ul li a {
+	background-color: #010124;
+	color: #fff;
+	padding: 4px 10px 4px 10px;
+}
+.alter_sing {
+	margin-left: -39px;
+	margin-top: 20px;
+}
+.from_box h3 {
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #000;
+	letter-spacing: 0.1px;
+	margin-top: 40px;
+	text-decoration: none;
+}
+.reg_box_area {
+	padding-top: 6%;
+}
+.reset_box{
+	height:200px;
+}
+.from_box.policy_box {
+	height: 400px;
+	overflow: scroll;
+}
+
+.policy_box h3 {
+	margin-top: 6px;
+}
+
+.policy_box ol li {
+	font-size: 12px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	color: #000;
+	letter-spacing: 0.1px;
+	margin-bottom: 20px;
+	font-style: italic;
+	line-height: 18px;
+}
+.agreement_acpt_title {
+	margin-top: -22px;
+	margin-left: 34px;
+	margin-bottom: 12px;
+}
+
+.submit_btn {
+	float: right;
+	border: none;
+	background: #ddd;
+	color: #000;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	padding: 5px 30px 5px 30px;
+	margin-bottom: 40px;
+}
+
+.from_box.varification_box {
+	height: 143px;
+}
