@@ -1,5 +1,6 @@
 
-    
+<?php $this->load->view('header_footer/header');?>
+
   
     <!-- <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhtdWgnJBSZl7DNaIMgPCIf2qhSBW7bWM&callback=initMap">
@@ -136,3 +137,6 @@
     </script>
   </body>
 </html>
+
+
+<?php $this->load->view('header_footer/footer');?>

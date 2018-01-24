@@ -14,10 +14,10 @@
                 var longitude = position.coords.longitude;
                 var width = $( window ).width();
                 var height = $( window ).height();
-                var base_url = $('#baseUrl').val(); 
-                var main_url = base_url + 'Welcome/view_user_info'; 
+                var base_url = $('#baseUrl').val();
+                var main_url = base_url + 'Welcome/view_user_info';
                 //var manage_video_id = $('#manage_single_video_id').val();
-                var formdata = new FormData(); 
+                var formdata = new FormData();
                 formdata.append("latitude", latitude);
                 formdata.append("longitude", longitude);
                 formdata.append("width", width);
@@ -103,7 +103,7 @@
     // }
 
 
-    
+
 
 </script>
 </br>
