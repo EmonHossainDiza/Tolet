@@ -138,5 +138,397 @@
   </body>
 </html>
 
+<!-- Advertisement Section Start -->
+<section class="footer_adv">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer_adv_area">
+                    <img src="<?php base_url()?>assets/img/banner/banner.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Property Tab -->
+<section id="property-tab">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-row">
+                    <h3 class="section_title_blue">Featured <span>e -Tolet</span></h3>
+                    <div class="sub-title">
+                        <p>Let us find your home</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="gallery-section">
+                    <div class="auto-container">
+                        <!--Filter-->
+                        <div class="filters">
+                            <ul class="filter-tabs filter-btns clearfix anim-3-all">
+                                <li class="active filter" data-role="button" data-filter="all">All</li>
+                                <li class="filter" data-role="button" data-filter=".house">Appartment</li>
+                                <li class="filter" data-role="button" data-filter=".office">Office</li>
+                                <li class="filter" data-role="button" data-filter=".appartment">Sublet</li>
+                                <li class="filter" data-role="button" data-filter=".realty">Mess</li>
+                            </ul>
+                        </div>
+                        <!--Filter List-->
+
+                        <!-- Tab Content -->
+                        <div class="row filter-list clearfix">
+                            <div class="column mix mix_all house appartment col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">Rent</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-1.png" alt=""></a>
+                                        <div class="sale_amount">12 Hours Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">Lovelece Road Greenfield</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> 528 Poplar Chase Lane Boise</span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$1250/mo</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column mix mix_all house appartment col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">Rent</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-2.png" alt=""></a>
+                                        <div class="sale_amount">12 Hours Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">Park Road Appartment Rent</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> 3225 George Street Brooksville, FL 34610</span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$1250/mo</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column mix mix_all office realty col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">Rent</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-3.png" alt=""></a>
+                                        <div class="sale_amount">3 Days Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">Rose Villa Infront Of River</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> 3175 Isaacs Creek Road New Canton</span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$1250/mo</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column mix mix_all office appartment col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">sale</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-4.png" alt=""></a>
+                                        <div class="sale_amount">14 Days Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">Dulax Condos Include Hall</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> 1566 Warner Street Doral, FL 33178 </span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$350,000</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column mix mix_all house realty col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">Rent</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-5.png" alt=""></a>
+                                        <div class="sale_amount">12 Hours Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">Forest House For Holiday Tour</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i>4515 Duncan Avenue New York, NY 116 </span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$850/mo</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column mix mix_all office realty col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">Sale</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-6.png" alt=""></a>
+                                        <div class="sale_amount">1 Month Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">New Developed Condos</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i>367 Sharon Lane South Bend, IN 4601 </span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$152,000</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column mix mix_all office realty col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">Sale</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-7.png" alt=""></a>
+                                        <div class="sale_amount">4 Days Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">Single Villa with Ground</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i>367 Sharon Lane South Bend, IN 4601 </span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$152,000</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column mix mix_all office realty col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">Sale</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-8.png" alt=""></a>
+                                        <div class="sale_amount">12 Hours Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">New Appartment Interior</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i>367 Sharon Lane South Bend, IN 4601 </span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$250,000</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column mix mix_all house appartment col-md-4 col-sm-6 col-xs-12">
+                                <div class="property_grid">
+                                    <div class="img_area">
+                                        <div class="sale_btn">Rent</div>
+                                        <div class="featured_btn">Featured</div>
+                                        <a href="#"><img src="<?php base_url()?>assets/img/property_grid/property_grid-1.png" alt=""></a>
+                                        <div class="sale_amount">12 Hours Ago</div>
+                                        <div class="hover_property">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="property-text">
+                                        <a href="#"><h6 class="property-title">Lovelece Road Greenfield</h6></a>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> 528 Poplar Chase Lane Boise</span>
+                                        <div class="quantity">
+                                            <ul>
+                                                <li><span>Area</span>1600 Sqft</li>
+                                                <li><span>Rooms</span>9</li>
+                                                <li><span>Beds</span>4</li>
+                                                <li><span>Baths</span>3</li>
+                                                <li><span>Garage</span>1</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bed_area">
+                                        <ul>
+                                            <li>$1250/mo</li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-like"></i></a></li>
+                                            <li class="flat-icon"><a href="#"><i class="flaticon-connections"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End tab content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Advertisement Section Start -->
+<section class="footer_adv">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer_adv_area">
+                    <img src="<?php base_url()?>assets/img/banner/banner.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <?php $this->load->view('header_footer/footer');?>

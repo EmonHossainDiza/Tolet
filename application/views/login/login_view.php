@@ -2,26 +2,22 @@
 
 <?php $this->load->view('header_footer/header');?>
 
-<!-- Banner Section Start -->
-<section id="banner">
+<!-- Advertisement Section Start -->
+<section class="header_adv">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="banner_area">
+                <div class="header_adv_area">
                     <img src="<?php base_url()?>assets/img/banner/banner.png"/>
-<!--                    <h3 class="page_title">Sign In</h3>-->
-<!--                    <div class="page_location">-->
-<!--                        <a href="index_1.html">Home</a>-->
-<!--                        <i class="fa fa-angle-right" aria-hidden="true"></i>-->
-<!--                        <span>Sign In</span>-->
-<!--                    </div>-->
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
 <section class="login-box">
+    <div id="msg"><?php echo $this->session->flashdata('msg')?></div>
     <!-- Modal -->
     <div id="myModal_two">
         <div class="modal-dialog toggle_area" role="document">
@@ -29,7 +25,7 @@
                 <h4 class="inner-title">Sign In Account</h4>
             </div>
             <div class="modal-body login_body">
-                <p>Welcome to Uniland, please sign in general user or agent both!</p>
+<!--                <p>Welcome to Uniland, please sign in general user or agent both!</p>-->
                 <div class="login_option">
                     <form method="post" enctype="multipart/form-data" action="<?php echo base_url()?>Profile">
                         <div class="form-group">
@@ -50,23 +46,19 @@
     </div>
 </section>
 
-<!-- Banner Section Start -->
-<section id="banner2">
+
+<!-- Advertisement Section Start -->
+<section class="footer_adv">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="banner_area2">
+                <div class="footer_adv_area">
                     <img src="<?php base_url()?>assets/img/banner/banner.png"/>
-<!--                    <h3 class="page_title2">Sign In</h3>-->
-<!--                    <div class="page_location2">-->
-<!--                        <a href="index_1.html">Home</a>-->
-<!--                        <i class="fa fa-angle-right" aria-hidden="true"></i>-->
-<!--                        <span>Sign In</span>-->
-<!--                    </div>-->
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <?php $this->load->view('header_footer/footer');?>

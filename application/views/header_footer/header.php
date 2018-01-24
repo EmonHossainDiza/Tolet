@@ -80,7 +80,7 @@
                 <div class="col-md-8 col-sm-5">
                     <div class="top_contact">
                         <ul>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> Need Support ? +1-435-782-4312</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> Need Support ? +880-782-4312</li>
                         </ul>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                             <li>
                                 <div class="lan-drop"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Eng <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">sp</a></li>
+                                        <li><a href="#">বাংলা</a></li>
                                         <li><a href="#">ch</a></li>
                                         <li><a href="#">ud</a></li>
                                     </ul>
