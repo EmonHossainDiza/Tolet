@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from unicoderbd.com/theme/html/uniland/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jan 2018 16:49:24 GMT -->
 <head>
     <!-- Meta Tag -->
     <meta charset="utf-8">
@@ -129,21 +127,23 @@
                             <ul class="nav navbar-nav navbar-right nav_text">
                                 <li><a href="<?php echo base_url()?>"><?php if($this->session->userdata('lang')==2){ echo "হোম";} else{ echo "Home";}?></a></li>
 
-<!--                                <li class="dropdown">-->
-<!--                                    <a href="index_1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-caret-down" aria-hidden="true"></i></a>-->
-<!--                                    <ul class="dropdown-menu">-->
-<!--                                        <li><a href="index_1.html">Simple Image Slider</a></li>-->
-<!--                                        <li><a href="index_2.html">Fixed Height Map</a></li>-->
-<!--                                        <li><a href="index_3.html">Video Banner + Search</a></li>-->
-<!--                                        <li><a href="index_4.html">Fixed Banner + Search</a></li>-->
-<!--                                        <li><a href="index_5.html">Property Slide</a></li>-->
-<!--                                        <li><a href="index_6.html">Full Height Map + Nav</a></li>-->
-<!--                                        <li><a href="index_7.html">Fixed Height Map + Search</a></li>-->
-<!--                                        <li><a href="index_8.html">Full Height Map + Search</a></li>-->
-<!--                                        <li><a href="index_9.html">Map Left + Search Right</a></li>-->
-<!--                                    </ul>-->
-<!--                                </li>-->
                                 <li class="dropdown">
+
+                                    <a href="index_1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="index_1.html">Simple Image Slider</a></li>
+                                        <li><a href="index_2.html">Fixed Height Map</a></li>
+                                        <li><a href="index_3.html">Video Banner + Search</a></li>
+                                        <li><a href="index_4.html">Fixed Banner + Search</a></li>
+                                        <li><a href="index_5.html">Property Slide</a></li>
+                                        <li><a href="index_6.html">Full Height Map + Nav</a></li>
+                                        <li><a href="index_7.html">Fixed Height Map + Search</a></li>
+                                        <li><a href="index_8.html">Full Height Map + Search</a></li>
+                                        <li><a href="index_9.html">Map Left + Search Right</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "সম্পত্তি";} else{ echo "Properties";}?> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown">

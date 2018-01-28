@@ -11,7 +11,9 @@ class Registration extends CI_Controller {
     public function index()
     {
         $title['title']="Tolet | Registration";
-        $this->load->view("registration/registration_view",$title);
+
+        $this->load->view("registration/newRes",$title);
+//        $this->load->view("registration/registration_view",$title);
     }
 
     public function add_reg()

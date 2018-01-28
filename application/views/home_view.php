@@ -58,13 +58,13 @@
   <h4><a href="<?php echo base_url()?>Login">Login</a></h4>
   <h4><a href="<?php echo base_url()?>Registration">Registration</a></h4>
 
-  <div>
-      <?php 
-        echo "<pre>";
-        print_r($view_content_info); 
-        ?>
-        <br>
-    </div>
+<!--  <div>-->
+<!--      --><?php //
+//        echo "<pre>";
+//        print_r($view_content_info);
+//        ?>
+<!--        <br>-->
+<!--    </div>-->
     <div id="floating-panel">
       <!-- <input id="latlng" type="text" value="40.714224,-73.961452"> -->
       <input id="latlng" type="text" value="">
