@@ -78,7 +78,7 @@
                 <div class="col-md-8 col-sm-5">
                     <div class="top_contact">
                         <ul>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> Need Support ? +880-782-4312</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> <?php if($this->session->userdata('lang')==2){ echo "প্রয়োজন ? +৮৮০-৭৮২-৪৩২১";} else{ echo "Need Support ? +880-782-4312";}?></li>
                         </ul>
                     </div>
                 </div>
@@ -86,16 +86,15 @@
                     <div class="top_right">
                         <ul>
                             <li>
-                                <div class="lan-drop"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Eng <span class="caret"></span></a>
+                                <div class="lan-drop"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "বাংলা";} else{ echo "Eng";}?><span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">বাংলা</a></li>
-                                        <li><a href="#">ch</a></li>
-                                        <li><a href="#">ud</a></li>
+                                        <li><a href="<?php base_url()?>1">Eng</a></li>
+                                        <li><a href="<?php base_url()?>2">বাংলা</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="<?php base_url()?>Registration" class="toogle_btn" >Register</a></li>
-                            <li><a href="<?php base_url()?>Login" class="toogle_btn" >Login</a></li>
+                            <li><a href="<?php base_url()?>Registration" class="toogle_btn" ><?php if($this->session->userdata('lang')==2){ echo "নিবন্ধন";} else{ echo "Register";}?></a></li>
+                            <li><a href="<?php base_url()?>Login" class="toogle_btn" ><?php if($this->session->userdata('lang')==2){ echo "প্রবেশ করুন";} else{ echo "Login";}?></a></li>
                         </ul>
                     </div>
                 </div>
@@ -126,7 +125,7 @@
                                 <a href="submit_property.html"><i class="fa fa-plus" aria-hidden="true"></i>Submit Property</a>
                             </div>
                             <ul class="nav navbar-nav navbar-right nav_text">
-                                <li><a href="<?php echo base_url()?>">Home</a></li>
+                                <li><a href="<?php echo base_url()?>"><?php if($this->session->userdata('lang')==2){ echo "হোম";} else{ echo "Home";}?></a></li>
 
                                 <li class="dropdown">
                                     <a href="index_1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -143,7 +142,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Properties <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "সম্পত্তি";} else{ echo "Properties";}?> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Property List <i class="fa fa-caret-right" aria-hidden="true"></i></a>
@@ -183,7 +182,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agents <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "দালাল";} else{ echo "Agents";}?><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="agents.html">Agents</a></li>
                                         <li><a href="agent_profile_grid.html">Agent Profile Grid</a></li>
@@ -191,10 +190,10 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "পৃষ্ঠা সমূহ";} else{ echo "Pages";}?> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "আমাদের সম্পর্কে";} else{ echo "About Us";}?><i class="fa fa-caret-right" aria-hidden="true"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="about.html">About Us</a></li>
                                                 <li><a href="mission.html">Our Mission</a></li>
@@ -204,7 +203,7 @@
                                             </ul>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "আমার একাউন্ট";} else{ echo "My Account";}?><i class="fa fa-caret-right" aria-hidden="true"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="my_profile.html">My Profile</a></li>
                                                 <li><a href="profile_media.html">Social Media</a></li>
@@ -228,14 +227,14 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "ব্লগ";} else{ echo "Blog";}?><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="blog_grid.html">Blog Grid</a></li>
                                         <li><a href="blog.html">Blog List</a></li>
                                         <li><a href="blog_detail.html">Blog Detail</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html"><?php if($this->session->userdata('lang')==2){ echo "যোগাযোগ";} else{ echo "Contact";}?></a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->

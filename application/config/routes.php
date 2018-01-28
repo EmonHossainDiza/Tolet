@@ -62,6 +62,9 @@ $route['Registration'] = 'Registration';
 $route['Registration/Survey'] = 'Registration/add_reg';
 $route['Registration/Verification'] = 'Registration/verify';
 
+// Language
+$route['([a-z 0-9 -]+)'] = 'Language/index/$1';
+
 // Logout
 $route['Logout'] = 'Logout';
 
