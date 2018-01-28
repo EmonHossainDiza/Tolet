@@ -128,6 +128,7 @@
                                 <li><a href="<?php echo base_url()?>"><?php if($this->session->userdata('lang')==2){ echo "হোম";} else{ echo "Home";}?></a></li>
 
                                 <li class="dropdown">
+
                                     <a href="index_1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="index_1.html">Simple Image Slider</a></li>
@@ -142,6 +143,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
+
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if($this->session->userdata('lang')==2){ echo "সম্পত্তি";} else{ echo "Properties";}?> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown">
