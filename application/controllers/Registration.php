@@ -12,7 +12,8 @@ class Registration extends CI_Controller {
     {
         $title['title']="Tolet | Registration";
 
-        $this->load->view("registration/newRes",$title);
+        $this->load->view("registration/test_registration",$title);
+       // $this->load->view("registration/newRes",$title);
 //        $this->load->view("registration/registration_view",$title);
     }
 

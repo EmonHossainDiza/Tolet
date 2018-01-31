@@ -698,33 +698,15 @@
 		enableMasonry();
 	});
 	
-	
+	/* off by Rumi for test */
 	// 28. Youtube and Vimeo video popup control
-	jQuery(function(){
-		jQuery("a.video-popup").YouTubePopUp();
-		//jQuery("a.video-popup").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
-	});
-	
-	// 29. Pricing bar Filter
-	$(".filter_price").slider({ 
-		from: 0,
-		to: 1000000,
-		step: 1000,
-		smooth: true,
-		round: 0,
-		dimension: "$",
-		skin: "plastic" 
-	});
-	
-	$(".area_filter").slider({ 
-		from: 0,
-		to: 10000,
-		step: 10,
-		smooth: true,
-		round: 0,
-		dimension: "sq ft",
-		skin: "plastic" 
-	});
+	// jQuery(function(){
+	// 	jQuery("a.video-popup").YouTubePopUp();
+	// 	//jQuery("a.video-popup").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+	// });
+
+    /* off by Rumi for test */
+
 	
 	// 30. Full Screen Map Height
 	$window.on('resize', function(){
@@ -777,28 +759,30 @@
 	});
 	
 	// 33. Star Rating Creator
-	
-	function ratingEnable() {
-
-        $('#example-reversed, .select_option').barrating('show', {
-            theme: 'bars-reversed',
-            showSelectedRating: true,
-        });
-		
-		$('.select_option').barrating('show', {
-            theme: 'bars-reversed',
-            showSelectedRating: true,
-			showValues: true,
-        });
-    }
-
-    function ratingDisable() {
-        $('select').barrating('destroy');
-    }
-
-
-
-    ratingEnable();
+	/* off by rumi */
+    // function ratingEnable() {
+    //
+    //     $('#example-reversed, .select_option').barrating('show', {
+    //         theme: 'bars-reversed',
+    //         showSelectedRating: true,
+    //     });
+		//
+		// $('.select_option').barrating('show', {
+    //         theme: 'bars-reversed',
+    //         showSelectedRating: true,
+		// 	showValues: true,
+    //     });
+    // }
+    //
+    // function ratingDisable() {
+    //     $('select').barrating('destroy');
+    // }
+    //
+    //
+    //
+    // ratingEnable();
+    //
+    // /* off by rumi */
 	
 
 

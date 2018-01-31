@@ -1,11 +1,12 @@
 
+
 <!-- Footer Section Start -->
 <section id="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="footer_widget">
-<!--                    <div class="footer-logo"><a href="index_1.html"><img class="logo-bottom" src="--><?php //echo base_url()?><!--/assets/img/logo2.png" alt=""></a></div>-->
+                    <div class="footer-logo"><a href="index_1.html"><img class="logo-bottom" src="<?php base_url()?>assets/img/logo2.png" alt=""></a></div>
                     <div class="footer_contact">
                         <p>Netus ut pede mus vestibulum montes. Mus. Pretium. Mattis habitant netus ligula ridiculus a nam bibendum fusce litora. Ac ullamcorper blandit, viverra pellentesque scelerisque. Phasellus aptent sociosqu nec posuere.</p>
                     </div>
@@ -89,7 +90,7 @@
 
 <!-- Bottom Footer Start -->
 <div id="bottom_footer">
-    <div class="reserve_text"> <span>Copyright &copy; 2018 Try Catch All Right Reserve</span> </div>
+    <div class="reserve_text"> <span>Copyright &copy; 2018 e-Tolet All Right Reserve</span> </div>
 </div>
 <!-- Bottom Footer End -->
 
@@ -99,33 +100,46 @@
 </div>
 <!-- End Scroll To top -->
 
-<!-- All Javascript Plugin File here -->
-<script src="<?php base_url()?>assets/js/jquery.min.js"></script>
-<script src="<?php base_url()?>assets/js/bootstrap.min.js"></script>
-<script src="<?php base_url()?>assets/js/bootstrap-select.js"></script>
-<script src="<?php base_url()?>assets/js/YouTubePopUp.jquery.js"></script>
-<script src="<?php base_url()?>assets/js/jquery.fancybox.pack.js"></script>
-<script src="<?php base_url()?>assets/js/jquery.fancybox-media.js"></script>
-<script src="<?php base_url()?>assets/js/owl.js"></script>
-<script src="<?php base_url()?>assets/js/mixitup.js"></script>
-<script src="<?php base_url()?>assets/js/wow.js"></script>
-<script src="<?php base_url()?>assets/js/jshashtable-2.1_src.js"></script>
-<script src="<?php base_url()?>assets/js/jquery.numberformatter-1.2.3.js"></script>
-<script src="<?php base_url()?>assets/js/tmpl.js"></script>
-<script src="<?php base_url()?>assets/js/jquery.dependClass-0.1.js"></script>
-<script src="<?php base_url()?>assets/js/draggable-0.1.js"></script>
-<script src="<?php base_url()?>assets/js/jquery.slider.js"></script>
-<script src="<?php base_url()?>assets/js/custom.js"></script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-106986305-1', 'auto');
-    ga('send', 'pageview');
-</script>
 </body>
 
-<!-- Mirrored from unicoderbd.com/theme/html/uniland/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jan 2018 16:49:24 GMT -->
 </html>
+
+
+<!-- All Javascript Plugin File here -->
+<?php $this->load->view("css_js/common-js");?>
+
+<!-- maybe For All Page -->
+
+<?php $this->load->view("css_js/all-js");?>
+
+
+
+<!-- maybe For All Page -->
+
+
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADAvRonq8GcS5dNWMPgDMf17hgiaTHs7E&amp;callback=initMap"></script>-->
+<!--<script src="--><?php //base_url()?><!--assets/js/map/markerwithlabel_packed.js"></script>-->
+<!--<script src="--><?php //base_url()?><!--assets/js/map/infobox.js"></script>-->
+<!--<script src="--><?php //base_url()?><!--assets/js/map/markerclusterer_packed.js"></script>-->
+<!--<script src="--><?php //base_url()?><!--assets/js/map/custom-map.js"></script>-->
+
+<script src="<?php base_url()?>assets/js/custom.js"></script>
+
+<!--<script>-->
+<!--    _latitude = 36.596165;-->
+<!--    _longitude = -97.062988;-->
+<!--    createHomepageGoogleMap(_latitude,_longitude);-->
+<!--    $(window).load(function(){-->
+<!--        initializeOwl(false);-->
+<!--    });-->
+<!--</script>-->
+<!--<script>-->
+<!--    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+<!--        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+<!--        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+<!--    })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');-->
+<!---->
+<!--    ga('create', 'UA-106986305-1', 'auto');-->
+<!--    ga('send', 'pageview');-->
+<!--</script>-->

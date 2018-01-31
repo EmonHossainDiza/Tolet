@@ -1,3 +1,22 @@
+
+
+<?php $this->load->view('header_footer/header');?>
+
+<!-- Advertisement Section Start -->
+<section class="header_adv">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header_adv_area">
+                    <img src="<?php base_url()?>assets/img/banner/banner.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,15 +31,16 @@
         background: #dfdfdf none repeat scroll 0 0;
         color: #fff;
         left: 20px;
-        position: absolute;
-        top: 115px;
+        /*position: absolute;*/
+        margin-bottom: 10px
+        /*top: 115px;*/
     }
     #pswd_info h4{
-        background: black none repeat scroll 0 0;
+        background: #C92323 none repeat scroll 0 0;
         display: block;
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 0;
-        padding: 17px 0;
+        padding: 10px 0;
         text-align: center;
         text-transform: uppercase;
     }
@@ -28,38 +48,42 @@
         list-style: outside none none;
     }
     #pswd_info ul li {
-        padding: 10px 45px;
+        padding: 10px 5px 5px 5px;
     }
 
     .valid {
-        background: rgba(0, 0, 0, 0) url("https://s19.postimg.org/vq43s2wib/valid.png") no-repeat scroll 2px 6px;
+        background: #FFF ;
+        /*background: #FFF url("https://s19.postimg.org/vq43s2wib/valid.png") no-repeat scroll 2px 6px;*/
         color: green;
-        line-height: 21px;
+        line-height: 14px;
         padding-left: 22px;
+        font-size: 12px;
     }
 
     .invalid {
-        background: rgba(0, 0, 0, 0) url("https://s19.postimg.org/olmaj1p8z/invalid.png") no-repeat scroll 2px 6px;
+        background: #FFF ;
+        /*background: #FFF url("https://s19.postimg.org/olmaj1p8z/invalid.png") no-repeat scroll 2px 6px;*/
         color: red;
-        line-height: 21px;
+        line-height: 14px;
         padding-left: 22px;
+        font-size: 12px;
     }
 
-    #pswd_info::before {
-        background: #dfdfdf none repeat scroll 0 0;
-        content: "";
-        height: 25px;
-        left: -13px;
-        margin-top: -12.5px;
-        position: absolute;
-        top: 86%;
-        transform: rotate(45deg);
-        width: 25px;
-    }
+    /*#pswd_info::before {*/
+        /*background: #dfdfdf none repeat scroll 0 0;*/
+        /*content: "";*/
+        /*height: 25px;*/
+        /*left: -13px;*/
+        /*margin-top: -12.5px;*/
+        /*position: absolute;*/
+        /*top: 86%;*/
+        /*transform: rotate(45deg);*/
+        /*width: 25px;*/
+    /*}*/
     #pswd_info {
         display:none;
-        top: 84px;
-        right: -36px;
+        /*top: 84px;*/
+        /*right: -36px;*/
     }
 
 </style>
@@ -79,6 +103,7 @@
                 <form method="post"  enctype="multipart/form-data" action="<?php echo base_url()?>Registration/Survey">
 
                     <div class="signup_option">
+
                         <div class="form-group">
                             <input type="text" id="name" class="form-control" placeholder="Full Name">
                         </div>
@@ -91,10 +116,21 @@
                         <div class="form-group">
                             <input type="password" id="paw" class="form-control" placeholder="Password">
                         </div>
+                        <div id="pswd_info">
+                            <h4>Password must be requirements</h4>
+                            <ul>
+                                <li id="letter" class="invalid">At least <strong>one letter</strong></li>
+<!--                                <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>-->
+                                <li id="number" class="invalid">At least <strong>one number</strong></li>
+                                <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+<!--                                <li id="space" class="invalid">be<strong> use [~,!,@,#,$,%,^,&,*,-,=,.,;,']</strong></li>-->
+                            </ul>
+                        </div>
                         <div class="form-group">
                             <input id="checkBox" type="checkbox">  <?php if($this->session->userdata('lang')==2){ echo "হ হ  <a href=\"#\">নিয়মনীতি </a> পইড়া নিসি ";} else{ echo "I have read carefully and accept the <a href=\"#\">Terms and Condition";}?>
                         </div>
                     </div>
+
                     <div class="submit_area">
                         <button type="submit" name="reg" class="btn btn-default"><?php if($this->session->userdata('lang')==2){ echo "সাইন আপ ";} else{ echo "Sign Up";}?></button>
                     </div>
@@ -110,16 +146,16 @@
             <div class="modal-footer"> <span><?php if($this->session->userdata('lang')==2){ echo "কিল্ক করুন <a href=\"#\">নিয়মনীতি</a> সম্পর্কে জানতে ";} else{ echo "Click and read our terms and condition <a href=\"#\">Terms and Condition</a>";}?></span> </div>
         </div>
 
-            <div id="pswd_info">
-                <h4>Password must be requirements</h4>
-                <ul>
-                    <li id="letter" class="invalid">At least <strong>one letter</strong></li>
-                    <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
-                    <li id="number" class="invalid">At least <strong>one number</strong></li>
-                    <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
-                    <li id="space" class="invalid">be<strong> use [~,!,@,#,$,%,^,&,*,-,=,.,;,']</strong></li>
-                </ul>
-            </div>
+<!--            <div id="pswd_info">-->
+<!--                <h4>Password must be requirements</h4>-->
+<!--                <ul>-->
+<!--                    <li id="letter" class="invalid">At least <strong>one letter</strong></li>-->
+<!--                    <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>-->
+<!--                    <li id="number" class="invalid">At least <strong>one number</strong></li>-->
+<!--                    <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>-->
+<!--                    <li id="space" class="invalid">be<strong> use [~,!,@,#,$,%,^,&,*,-,=,.,;,']</strong></li>-->
+<!--                </ul>-->
+<!--            </div>-->
 
 
 
@@ -189,3 +225,20 @@
 
     });
 </script>
+
+
+<!-- Advertisement Section Start -->
+<section class="footer_adv">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer_adv_area">
+                    <img src="<?php base_url()?>assets/img/banner/banner.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php $this->load->view('header_footer/footer');?>
+

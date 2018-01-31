@@ -183,7 +183,7 @@ $.ajaxSetup({
 function createHomepageGoogleMap(_latitude,_longitude){
     /* setMapHeight(); */
     if( document.getElementById('map') != null ){
-        $.getScript("js/map/locations.js", function(){
+        $.getScript("assets/js/map/locations.js", function(){
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 5,
                 scrollwheel: false,
@@ -207,14 +207,14 @@ function createHomepageGoogleMap(_latitude,_longitude){
                     boxClass: "infobox-wrapper",
                     enableEventPropagation: true,
                     closeBoxMargin: "0px 0px -8px 0px",
-                    closeBoxURL: "img/map/close.png",
+                    closeBoxURL: "assets/img/map/close.png",
                     infoBoxClearance: new google.maps.Size(1, 1)
                 };
                 var marker = new MarkerWithLabel({
                     title: locations[i][1],
                     position: new google.maps.LatLng(locations[i][3], locations[i][4]),
                     map: map,
-                    icon: 'img/map/marker.png',
+                    icon: 'assets/img/map/marker.png',
                     labelContent: pictureLabel,
                     labelAnchor: new google.maps.Point(50, 0),
                     labelClass: "marker-style"
@@ -249,7 +249,7 @@ function createHomepageGoogleMap(_latitude,_longitude){
             }
             var clusterStyles = [
                 {
-                    url: 'img/map/marker.png',
+                    url: 'assets/img/map/marker.png',
                     height: 60,
                     width: 60
                 }

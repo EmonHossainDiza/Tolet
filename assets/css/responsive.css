@@ -1,6 +1,5 @@
 @media (max-width:1400px){#who_are{background-position:195% center}
 .who_text{padding:80px 20px 80px 14%;}
-
 }
 @media (max-width:1200px){.common-plan{padding-left:12px;padding-right:12px}
 .feature-plan{padding-left:0;padding-right:0}
@@ -32,7 +31,6 @@
 .carousel-caption.slider_text > p{font-size:14px}
 #who_are{background-position:750% center;}
 .who_text{padding:80px 20px 80px 5%;}
-
 }
 @media screen and (max-width:1200px) and (min-width:992px){.bed_area ul li:last-child{display:none}
 .faq_brochure .btn-default{padding-left:10px;padding-right:10px}
@@ -108,7 +106,6 @@
 .service-devider > div.col-md-4:nth-child(2n+2){border-right:1px solid transparent}
 .service-devider > div.col-md-4:nth-last-child(-n+2){border-bottom:1px solid transparent}
 .single_agent img{width:50%;float:left;padding-right:30px}
-
 }
 @media (max-width:767px){.half-wide-map{width:100%;}
 .search-fixed-right{width:100%;}
@@ -147,9 +144,7 @@
 .tabs_edit > li > a{padding:12px 15px}
 .page-style-2 .tabs_edit a::before{display:none}
 .reg_banner_title{line-height:30px;padding-bottom:20px}
-/*edited 24-1-18*/
-/*#top_header{display:none}*/
-    /*edited 24-1-18*/
+/*--#top_header{display:none}--*/
 .top_contact{display:none}
 .top_right{display:table;margin:0 auto;float:none}
 .find_text{display:none}
@@ -194,13 +189,6 @@
 .socail_area > ul{display:inline-block;width:100%;}
 .replied{padding-left:20px}
 .pagination > li{padding-right:1px}
-    /*edited 24-1-18*/
-
-    .modal-dialog{
-        width:400px;
-    }
-
-    /*edited 24-1-18*/
 }
 @media (max-width:320px){.slider_btn{display:none}
 .slider_text > p{font-size:14px;line-height:24px}
@@ -209,11 +197,4 @@
 .slider-search-2 h1{font-size:16px}
 .slider-search-2 .property_filter_input{display:none}
 #slider-fixed{height:100vh}
-/*edited 24-1-18*/
-
-    .modal-dialog{
-        width:300px;
-    }
-
-/*edited 24-1-18*/
 }

@@ -11,7 +11,8 @@ class Login extends CI_Controller {
     public function index()
     {
         $title['title']="Tolet | Login";
-        $this->load->view("login/login_view",$title);
+//        $this->load->view("login/login_view",$title);
+        $this->load->view("login/test_login",$title);
     }
 
     public function verify()

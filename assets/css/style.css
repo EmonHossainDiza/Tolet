@@ -299,7 +299,7 @@ a.btn-link {
 	line-height:50px
 }
 section {
-	padding: 20px 0
+	padding: 40px 0
 }
 #profile_setting {
 	padding: 80px 0
@@ -394,7 +394,8 @@ section {
 	position: absolute;
 	right: 0;
 	text-align: center;
-	top: -64px
+	top: -64px;
+
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"]
  {
@@ -728,7 +729,8 @@ input[type=radio]:checked{
     animation-fill-mode: both;
     width: 100%;
     z-index: 999;
-	position: absolute;
+	/*position: absolute;*/
+	position: relative;
 	top: 0;
 	left: 0
 }
@@ -1914,10 +1916,9 @@ a.btn-read{
 =======================================*/
 
 #banner{
-	/*background:url(../img/banner/banner.png) no-repeat;*/
+	background:url(../img/banner/banner.png) no-repeat;
 	background-size:cover;
 	position:relative;
-	height:240px;
 }
 
 #banner:before{
@@ -1935,7 +1936,6 @@ a.btn-read{
 	display: table;
 	width: 100%
 }
-
 .page_location{
 	float:right;
 	text-transform:capitalize;
@@ -1944,66 +1944,6 @@ a.btn-read{
 .page_location > i{
 	padding:0px 5px
 }
-/*edited 24-1-18*/
-
-.header_adv{
-	/*background:url(../img/banner/banner.png) no-repeat;*/
-	position: relative;
-	height: 110px;
-	background: #8A8A8A ;
-	box-shadow: 0px 5px 5px -5px #333;
-	margin-top: 126px;
-}
-
-.header_adv:before{
-	content:"";
-	position:absolute;
-	top:0;
-	bottom:0;
-	width:100%;
-}
-.header_adv_area {
-	display: table;
-	width: 100%;
-}
-.header_adv_area img{
-	display: table;
-	width: 100%;
-	height: 90px;
-	margin-top: -10px;
-}
-
-
-
-.footer_adv{
-	/*background:url(../img/banner/banner.png) no-repeat;*/
-	background-size:cover;
-	position:relative;
-	height:110px;
-	background: #8A8A8A ;
-	box-shadow: 0px 5px 5px -5px #333;
-}
-
-.footer_adv:before{
-	content:"";
-	position:absolute;
-	top:0;
-	bottom:0;
-	width:100%;
-}
-.footer_adv_area {
-	display: table;
-	width: 100%;
-}
-.footer_adv_area img{
-	display: table;
-	width: 100%;
-	height: 90px;
-	margin-top: -10px;
-}
-
-/*edited 24-1-18*/
-
 
 
 /*===================================================
@@ -3945,7 +3885,7 @@ address .inner-title {
 	background: url('../img/banner/tech-staff.png') no-repeat fixed;
 	background-size: cover;
 	background-position: center center;
-	padding: 70px 0;
+	padding: 30px 0 20px;
 	position: relative
 }
 #achivment:before{
@@ -4056,7 +3996,10 @@ address .inner-title {
 	width: 100%;
 	z-index: 99;
 	overflow: hidden;
-	margin-top: 125px
+	/*margin-top: 125px;*/ /*orginal*/
+	/*margin-top: 20px ;/*added by rumi*/
+	padding-left:5px;
+	padding-right:5px;
 }
 #map-banner.visible {
 	overflow: visible
@@ -4069,7 +4012,7 @@ address .inner-title {
 	-webkit-transform: translate(-50%, 100%);
 	-ms-transform: translate(-50%, 100%);
 	-o-transform: translate(-50%, 100%);
-	transform: translate(-50%, 100%)
+	transform: translate(-50%, 100%);
 	
 	-moz-transition: all 300ms ease-in-out;
 	-ms-transition: all 300ms ease-in-out;
