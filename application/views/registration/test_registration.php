@@ -70,6 +70,7 @@
                             </li>
                             <li><a href="<?php base_url()?>Registration" class="toogle_btn" >Register</a></li>
                             <li><a href="<?php base_url()?>Login" class="toogle_btn" >Login</a></li>
+                            <li><a href="<?php base_url()?>Reset" class="toogle_btn" >reset</a></li>
                         </ul>
                     </div>
                 </div>
@@ -100,6 +101,7 @@
                                 <a href="submit_property.html"><i class="fa fa-plus" aria-hidden="true"></i>Submit Property</a>
                             </div>
                             <ul class="nav navbar-nav navbar-right nav_text">
+                                <li><a href="<?php echo base_url()?>">homme</a></li>
                                 <li class="dropdown">
                                     <a href="index_1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">

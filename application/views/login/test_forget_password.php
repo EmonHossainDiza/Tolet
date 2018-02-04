@@ -14,15 +14,31 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo base_url()?>img/favicon.ico">
 
-    <?php $this->load->view("css_js/common-css");?>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.css">
 
-    <!-- login/Reg page -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/color.css" id="color-change">
+    <!--    <link rel="stylesheet" href="--><?php //echo base_url()?><!--assets/css/jslider.css">-->
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/loader.css">
+
+    <!-- login page -->
+
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/login/util.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/login/main.css">
-    <!-- end login/Reg page -->
 
+    <!-- end login page -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body >
+<body class="pagewrap login_and_Signup">
 
 <!-- Page Loader -->
 <div class="loading-page">
@@ -92,7 +108,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="<?php echo base_url()?>"><img class="nav-logo" src="<?php base_url()?>assets/img/logo1.png" alt=""></a>
+                            <a class="navbar-brand" href="#"><img class="nav-logo" src="img/logo1.png" alt=""></a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse my_nav" id="bs-example-navbar-collapse-1">
@@ -221,65 +237,35 @@
 </header>
 
 <!--<section class="login-box">-->
-<div  class="limiter">
-    <div class="container-login100">
+<div style="padding-top: 125px" class="limiter">
+    <div class="container-login100" style="margin-top: -87px; margin-bottom: 0px;">
         <div class="wrap-login100">
             <form class="login100-form validate-form p-l-55 p-r-55 p-t-110" method="post" action="<?php echo base_url()?>validateUser" onsubmit="return validateUser()">
 					<span class="login100-form-title">
-						Sign In Account
+						Forget Password
 					</span>
 
-                <div class="wrap-input100 validate-input m-b-10" data-validate="Please enter Your Email">
-                    <input class="input100" type="email" name="userEmail" id="userEmail" placeholder="Email Address">
-                    <span id="emailFocus" class="focus-input100"></span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate = "Please enter password">
+                <!-- <div class="wrap-input100 validate-input" data-validate = "Please enter password">
                     <input class="input100" type="password" name="userPass" id="userPass" placeholder="Password">
+                    <span class="focus-input100"></span>
+                </div> -->
+
+                <div class="wrap-input100 validate-input" data-validate = "Please enter confrim Email">
+                    <input class="input100" type="email" name="useremail" id="userConPass" placeholder="Email">
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="text-center p-t-0 p-b-16">
-						<span class="txt1">
-							Forgot
-						</span>
 
-                    <a href="<?php echo base_url().'Forget'; ?>" class="txt2">
-                        Password?
-                    </a>
-                </div>
 
                 <div class="container-login100-form-btn">
                     <button class="login100-form-btn">
-                        Sign in
+                        Reset
                     </button>
                 </div>
-
-                <div class="flex-col-c p-t-20">
-                    <h3>OR</h3>
-                    <p>Sign In With</p>
-                </div>
-
                 <div class="flex-col-c p-t-20 p-b-20">
-                    <ul class="social-network social-circle">
-                        <li><a href="#" class="icoRss icon" title="Rss"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#" class="icoFacebook icon" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter icon" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle icon" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin icon" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
+
                 </div>
 
-<!---->
-<!--                <div class="flex-col-c p-t-50 p-b-40">-->
-<!--						<span class="txt1 p-b-9">-->
-<!--							Don’t have an account?-->
-<!--						</span>-->
-<!---->
-<!--                    <a href="#" class="txt3">-->
-<!--                        Sign up now-->
-<!--                    </a>-->
-<!--                </div>-->
             </form>
         </div>
     </div>
@@ -293,7 +279,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="footer_widget">
-                    <div class="footer-logo"><a href="<?php echo base_url()?>"><img class="logo-bottom" src="<?php base_url()?>assets/img/logo2.png" alt=""></a></div>
+                    <div class="footer-logo"><a href="index_1.html"><img class="logo-bottom" src="img/logo2.png" alt=""></a></div>
                     <div class="footer_contact">
                         <p>Netus ut pede mus vestibulum montes. Mus. Pretium. Mattis habitant netus ligula ridiculus a nam bibendum fusce litora. Ac ullamcorper blandit, viverra pellentesque scelerisque. Phasellus aptent sociosqu nec posuere.</p>
                     </div>
@@ -386,10 +372,35 @@
 
 </html>
 
-<!-- All Javascript Plugin File here -->
 
-<?php $this->load->view("css_js/common-js");?>
+<!-- All Javascript Plugin File here -->
+<script src="<?php echo base_url()?>assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url()?>assets/js/bootstrap.min.js"></script>
+<!--<script src="--><?php //echo base_url()?><!--assets/js/bootstrap-select.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/YouTubePopUp.jquery.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/jquery.fancybox.pack.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/jquery.fancybox-media.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/owl.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/mixitup.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/wow.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/jshashtable-2.1_src.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/jquery.numberformatter-1.2.3.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/tmpl.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/jquery.dependClass-0.1.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/draggable-0.1.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/jquery.slider.js"></script>-->
 <script src="<?php echo base_url()?>assets/js/custom.js"></script>
 
-<!-- js for login/Reg -->
+
 <script src="<?php echo base_url()?>assets/css/login/main.js"></script>
+
+<!--<script>-->
+<!---->
+<!--    function validateUser() {-->
+<!---->
+<!--        var pass = document.getElementById('userPass').value;-->
+<!--        if (pass =='') {-->
+<!--            $('#userPass').addClass('alert-validate').select();-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->

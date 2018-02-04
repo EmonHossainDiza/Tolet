@@ -1,6 +1,4 @@
-<!--<script async defer-->
-<!--        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhtdWgnJBSZl7DNaIMgPCIf2qhSBW7bWM&callback=initMap">-->
-<!--</script>-->
+
 
 <!DOCTYPE html>
 <html>
@@ -48,7 +46,7 @@
             width: 225px;
         }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <!--<div>-->

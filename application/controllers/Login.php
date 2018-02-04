@@ -80,5 +80,15 @@ class Login extends CI_Controller {
 
     }
 
+    function forget_password(){
+        $data = [];
+        $this->load->view('login/test_forget_password',$data);
+    }
+
+    function reset_password(){
+        $data = [];
+        $this->load->view('login/test_reset_pass',$data);
+    }
+
 
 }

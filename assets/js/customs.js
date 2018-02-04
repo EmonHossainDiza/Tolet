@@ -698,14 +698,12 @@
 		enableMasonry();
 	});
 	
-	/* off by Rumi for test */
+	
 	// 28. Youtube and Vimeo video popup control
-	// jQuery(function(){
-	// 	jQuery("a.video-popup").YouTubePopUp();
-	// 	//jQuery("a.video-popup").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
-	// });
-
-    /* off by Rumi for test */
+	jQuery(function(){
+		jQuery("a.video-popup").YouTubePopUp();
+		//jQuery("a.video-popup").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+	});
 	
 	// 29. Pricing bar Filter
 	$(".filter_price").slider({ 
@@ -779,14 +777,14 @@
 	});
 	
 	// 33. Star Rating Creator
-	/* off by rumi */
-    function ratingEnable() {
+	
+	function ratingEnable() {
 
         $('#example-reversed, .select_option').barrating('show', {
             theme: 'bars-reversed',
             showSelectedRating: true,
         });
-
+		
 		$('.select_option').barrating('show', {
             theme: 'bars-reversed',
             showSelectedRating: true,
@@ -801,8 +799,6 @@
 
 
     ratingEnable();
-
-    // /* off by rumi */
 	
 
 

@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="<?php base_url()?>assets/css/leaflet.css">
 
+        
     <link rel="stylesheet" href="<?php base_url()?>assets/fonts/flaticon.css">
 
 <!--    <link rel="stylesheet" href="--><?php //base_url()?><!--assets/css/jslider.css">-->
@@ -97,6 +98,7 @@
                             </li>
                             <li><a href="<?php base_url()?>Registration" class="toogle_btn" >Register</a></li>
                             <li><a href="<?php base_url()?>Login" class="toogle_btn" >Login</a></li>
+                            <li><a href="<?php base_url()?>Reset" class="toogle_btn" >reset</a></li>
                         </ul>
                     </div>
                 </div>
@@ -127,6 +129,7 @@
                                 <a href="submit_property.html"><i class="fa fa-plus" aria-hidden="true"></i>Submit Property</a>
                             </div>
                             <ul class="nav navbar-nav navbar-right nav_text">
+                                <li><a href="<?php echo base_url()?>">homme</a></li>
                                 <li class="dropdown">
                                     <a href="index_1.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
@@ -145,38 +148,11 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Properties <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Property List <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="property_list.html">Right Sidebar</a></li>
-                                                <li><a href="property_list_left.html">Left Sidebar</a></li>
-                                                <li><a href="property_list_full.html">Full Width</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Property Grid <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="property_grid.html">Right Sidebar</a></li>
-                                                <li><a href="property_grid_left.html">Left Sidebar</a></li>
-                                                <li><a href="property_grid_full.html">Full Width</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single Properties <i class="fa fa-caret-right" aria-hidden="true"></i></a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="single_property.html">Single Property 1</a></li>
-                                                <li><a href="single_property_2.html">Single Property 2</a></li>
-                                                <li><a href="single_property_3.html">Single Property 3</a></li>
-                                                <li><a href="single_property_4.html">Single Property 4</a></li>
-                                                <li><a href="single_property_5.html">Single Property 5</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Property With Map <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="property_grid_map.html">Grid View</a></li>
-                                                <li><a href="property_list_map.html">List View</a></li>
-                                                <li><a href="property_grid_fullmap.html">Grid View Full Map</a></li>
-                                                <li><a href="property_list_fullmap.html">List View Full Map</a></li>
+                                                <li><a href="<?php echo base_url()?>All-property">All Property</a></li>
+                                                <li><a href="<?php echo base_url()?>All-property-grid">All Property Grid</a></li>
+                                                <li><a href="<?php echo base_url()?>Single-property">Single Property</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -227,14 +203,19 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="blog_grid.html">Blog Grid</a></li>
-                                        <li><a href="blog.html">Blog List</a></li>
-                                        <li><a href="blog_detail.html">Blog Detail</a></li>
+                                        <li><a href="<?php echo base_url()?>My_profile">my profile</a></li>
+                                        <li><a href="<?php echo base_url()?>Fav_post">Fav posts</a></li>
+                                        <li><a href="<?php echo base_url()?>New_post">New post</a></li>
+                                        <li><a href="<?php echo base_url()?>My_post">My post</a></li>
+                                        <li><a href="<?php echo base_url()?>Chng_pass">change paswsword</a></li>
+
+
                                     </ul>
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
+
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->

@@ -10,4 +10,4 @@
 <script src="<?php base_url()?>assets/js/tmpl.js"></script>
 <script src="<?php base_url()?>assets/js/jquery.dependClass-0.1.js"></script>
 <script src="<?php base_url()?>assets/js/draggable-0.1.js"></script>
-<script src="<?php base_url()?>assets/js/jquery.slider.js"></script>
+<!-- <script src="<?php base_url()?>assets/js/jquery.slider.js"></script> -->

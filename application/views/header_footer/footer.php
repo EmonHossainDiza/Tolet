@@ -124,6 +124,8 @@
 <!--<script src="--><?php //base_url()?><!--assets/js/map/markerclusterer_packed.js"></script>-->
 <!--<script src="--><?php //base_url()?><!--assets/js/map/custom-map.js"></script>-->
 
+<script src="<?php echo base_url()?>assets/js/jquery.slider.js"></script>
+
 <script src="<?php base_url()?>assets/js/custom.js"></script>
 
 <!--<script>-->

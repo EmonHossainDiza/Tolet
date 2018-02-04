@@ -56,11 +56,30 @@ $route['translate_uri_dashes'] = FALSE;
 // Login
 $route['Login'] = 'Login';
 $route['Profile'] = 'Login/verify';
+$route['Forget'] = 'Login/forget_password';
+$route['Reset'] = 'Login/reset_password';
+
+
 
 //Registration
 $route['Registration'] = 'Registration';
 $route['Registration/Survey'] = 'Registration/add_reg';
 $route['Registration/Verification'] = 'Registration/verify';
+
+//Registration
+$route['Property'] = 'Post';
+$route['All-property'] = 'Post/all_property';
+$route['All-property-grid'] = 'Post/all_property_grid';
+$route['Single-property'] = 'Post/single_property';
+
+
+//profile
+$route['profile'] = 'Profile';
+$route['My_profile'] = 'Profile/my_profile';
+$route['Fav_post'] = 'Profile/fav_post';
+$route['New_post'] = 'Profile/new_post';
+$route['My_post'] = 'Profile/my_post';
+$route['Chng_pass'] = 'Profile/chgn_pass';
 
 // Language
 $route['([a-z 0-9 -]+)'] = 'Language/index/$1';

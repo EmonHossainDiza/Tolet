@@ -1,5 +1,10 @@
 <script src="<?php echo base_url()?>assets/js/jquery.min.js"></script>
 <script src="<?php echo base_url()?>assets/js/bootstrap.min.js"></script>
+<!---->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/bootstrap-select.js"></script>-->
+<!--<script src="--><?php //echo base_url()?><!--assets/js/jquery.numberformatter-1.2.3.js"></script>-->
+<!---->
+<script src="<?php echo base_url()?>assets/js/jquery.barrating.js"></script>
 
 
 
