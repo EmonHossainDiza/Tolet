@@ -1,32 +1,35 @@
 
 <?php $this->load->view('header_footer/header');?>
-
-	<!-- Banner Section Start -->
-		<section id="banner">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="banner_area">
-							<h3 class="page_title">Submit Property</h3>
-							<div class="page_location">
-								<a href="index_1.html">Home</a> 
-								<i class="fa fa-angle-right" aria-hidden="true"></i>
-								<a href="index_1.html">Pages</a> 
-								<i class="fa fa-angle-right" aria-hidden="true"></i>
-								<span>Submit Property</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Banner Section End -->
 		
 		<!-- Submit Property Start -->
 		<section id="submit_property">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-9 col-sm-12">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="settings_links">
+                            <ul>
+                                <li><span>Account Settings</span></li>
+                                <li class="active"><a href="<?php echo base_url()?>My_profile"><i class="flaticon-user"></i>My Profile</a></li>
+                            </ul>
+                            <ul>
+                                <li><span>Manage Properties</span></li>
+                                <li><a href="<?php echo base_url()?>My_post"><i class="flaticon-home"></i>My Post</a></li>
+                                <li><a href="<?php echo base_url()?>Fav_post""><i class="flaticon-star"></i>Favorited Properties</a></li>
+                                <li><a href="<?php echo base_url()?>New_post""><i class="flaticon-export"></i>Submit New Property</a></li>
+                            </ul>
+                            <!-- <ul>
+                                <li><a href="message.html"><i class="flaticon-notification"></i>Message <sup><i class="fa fa-circle" aria-hidden="true"></i></sup> <span>( 20 )</span></a></li>
+                                <li><a href="comments.html"><i class="flaticon-chat"></i>Feedback and Comments</a></li>
+                                <li><a href="invoices.html"><i class="flaticon-invoice"></i>Payments and Invoice</a></li>
+                            </ul> -->
+                            <ul>
+                                <li><a href="change_password.html"><i class="flaticon-locked"></i>Change Password</a></li>
+                                <li><a href="logout.html"><i class="flaticon-upload"></i>Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+					<div class="col-md-8 col-sm-12">
 						<form action="#" method="post" class="submit_form">
 							<div class="basic_information">
 								<h4 class="inner-title">Basic Information</h4>
@@ -247,24 +250,5 @@
 			</div>
 		</section>
 		<!-- Submit Property End -->
-		
-		<!-- Register Section Start -->
-		<section id="register-banner">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9">
-						<div class="reg_banner">
-							<h4 class="reg_banner_title">Are you looking for a House or Customer for your Property sale?</h4>
-							<span>Please click the button for register, we will become your best agent and help you for both.</span>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="register_btn">
-							<a href="#" class="btn btn-primary">Register Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Register Section End -->
+
 		<?php $this->load->view('header_footer/footer');?>
