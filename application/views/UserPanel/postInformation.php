@@ -1,5 +1,5 @@
 <form action="#" method="post" class="submit_form">
-    <div class="basic_information" style="position: absolute">
+    <div class="basic_information">
         <h4 class="inner-title">Basic Information</h4>
         <div class="row">
             <div class="col-md-12 col-sm-12">

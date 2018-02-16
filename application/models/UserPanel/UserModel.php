@@ -3,7 +3,7 @@
 class UserModel extends CI_Model
 {
 
-    public function getCategoryName($catId)
+    public function getCategoryNameStatus($catId)
     {
         $this->db->select('post_category_name,post_category_status');
         $this->db->where('post_category_id',$catId);

@@ -20,9 +20,9 @@ class PostController extends CI_Controller
     {
         $catId=$this->input->post('catId');
         $this->load->model('UserPanel/UserModel');
-        $catInfo=$this->UserModel->getCategoryName($catId);
+        $catInfo=$this->UserModel->getCategoryNameStatus($catId);
         foreach ($catInfo as $categoryInformation){
-            $catStatus=$categoryInformation->post_category_name;
+            $catStatus=$categoryInformation->post_category_status;
         }
         if ($catStatus=="1"){
             $this->load->view('UserPanel/postInformation');
