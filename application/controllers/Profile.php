@@ -6,6 +6,7 @@ class Profile extends CI_Controller {
     {
         parent::__construct();
         date_default_timezone_set('Asia/Dhaka');
+        $this->load->model('UserPanel/UserModel');
     }
 
     public function index()
@@ -25,6 +26,7 @@ class Profile extends CI_Controller {
 
     function new_post(){
         $data = [];
+        $data['catInfo']=$this->UserModel->getCategoryInfo();
         $this->load->view('profile/new_post',$data);
     }
 

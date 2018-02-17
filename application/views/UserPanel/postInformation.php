@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="alert alert-warning">Please input the correct information of your property. Because it will effect on property search.</div>
+        <!-- <div class="alert alert-warning">Please input the correct information of your property. Because it will effect on property search.</div> -->
     </div>
     <div class="description">
         <h4 class="inner-title">Description</h4>

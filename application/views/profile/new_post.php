@@ -33,15 +33,22 @@
                         <div class="col-md-12 col-sm-12">
                             <label>Choose Property Type</label>
                             <select id="requiredInfoByCategory" class="selectpicker form-control" data-live-search="true" onchange="requiredInfoByCategory()">
-                                <option>Selcet Post Type</option>
-                                <option value="1">Family</option>
-                                <option>Sublet</option>
-                                <option>Bechelor-Mess</option>
+
+                                <option value="">Selcet Post Type</option>
+                                <?php foreach ($catInfo as $cinfo) { ?>
+                                    
+                                <option value="<?php echo $cinfo->post_category_id; ?>"><?php echo $cinfo->post_category_name; ?></option>
+
+                                <?php } ?>
                             </select>
+                        </div>
+                        <div id="post_type_error" style="display: none;">
+                            <!-- <div class="alert alert-warning" style="margin-left: 0px; width: 20%;">Please choose Property Type.</div> -->
+                            <div class="alert alert-warning">Please choose Property Type.</div>
                         </div>
 
 
-                        <div id="postInformation" >
+                        <div id="postInformation" style="margin-top: 90px;">
 
 
 
@@ -56,8 +63,15 @@
 
 <script>
     function requiredInfoByCategory() {
-        var x = document.getElementById('requiredInfoByCategory').value;
+        var x = $('#requiredInfoByCategory').val();
 
+        if(x == ''){
+            //alert('Please select post type.');
+            $('#post_type_error').show();
+            $('#postInformation').hide();
+            $('#postInformation').html('');
+            return false;
+        }
 
         $.ajax({
             type:'POST',
@@ -66,10 +80,10 @@
             cache: false,
             success:function(data)
             {
+                $('#post_type_error').hide();
+                $('#postInformation').show();
                 $('#postInformation').html(data);
             }
         });
-
-        document.getElementById("postInformation").style.display ="block";
     }
 </script>
