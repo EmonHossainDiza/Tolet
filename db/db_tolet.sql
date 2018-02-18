@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2018 at 09:26 PM
+-- Generation Time: Feb 17, 2018 at 06:51 PM
 -- Server version: 10.1.25-MariaDB
--- PHP Version: 7.1.7
+-- PHP Version: 7.0.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -100,8 +100,18 @@ CREATE TABLE `tbl_post_boost_request` (
 
 CREATE TABLE `tbl_post_category` (
   `post_category_id` int(11) NOT NULL,
-  `post_category_name` varchar(255) DEFAULT NULL
+  `post_category_name` varchar(255) DEFAULT NULL,
+  `post_category_status` tinyint(4) DEFAULT NULL COMMENT '1=Family, 2= SubLet , 3=Mass'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_post_category`
+--
+
+INSERT INTO `tbl_post_category` (`post_category_id`, `post_category_name`, `post_category_status`) VALUES
+(1, 'Family', 1),
+(2, 'Sublet', 2),
+(3, 'Bachelor-Mess', 3);
 
 -- --------------------------------------------------------
 
@@ -217,7 +227,10 @@ CREATE TABLE `tbl_users` (
 
 INSERT INTO `tbl_users` (`user_id`, `user_email`, `user_name`, `user_password`, `user_type`, `user_phone`, `user_reg_date`, `user_last_modified_date`, `user_image`, `user_social_login_id`, `user_status`, `user_address`, `user_gender`, `user_nid`, `user_post_limit`) VALUES
 (1, 'emon@a.com', 'emon_diza', '$2b$10$A.Oiq2RRmeo8SElU99AZzOEk66YsRbbD.csyIo/apoTjJlc9Uv6de', 0, '01683795242', '2018-01-18 17:44:09', NULL, NULL, NULL, 1, 'nikunjo 2', 1, '19950000000000000', NULL),
-(2, 'emon@aa.com', 'emon hossain diza', '$2b$10$A.Oiq2RRmeo8SElU99AZzOEk66YsRbbD.csyIo/apoTjJlc9Uv6de', 0, '01918777695', '2018-01-18 17:45:40', NULL, NULL, NULL, 0, 'khilkhet, dhaka', 2, '1995111111111113', NULL);
+(2, 'emon@aa.com', 'emon hossain diza', '$2b$10$A.Oiq2RRmeo8SElU99AZzOEk66YsRbbD.csyIo/apoTjJlc9Uv6de', 0, '01918777695', '2018-01-18 17:45:40', NULL, NULL, NULL, 0, 'khilkhet, dhaka', 2, '1995111111111113', NULL),
+(3, NULL, NULL, '$2y$10$svMIjNd7Dw0MjzlkPWXt7uwUpZKzR4/XPrddDN0xOsd6vI9oPmBVa', 0, NULL, '2018-01-28 21:30:38', NULL, NULL, NULL, 0, NULL, 0, NULL, NULL),
+(4, NULL, NULL, '$2y$10$r0.QlsOIWKeXF.DvmputTeIVznzoGKO.zu6eu.rrfwLyEYOQyPQGa', 0, NULL, '2018-01-28 21:31:01', NULL, NULL, NULL, 0, NULL, 0, NULL, NULL),
+(5, NULL, NULL, '$2y$10$fUSYcJbJKlP8G1wsr2o3neX5/DLlB3nZY9b.eFXMnPpwLo.PJpGxW', 0, NULL, '2018-01-28 21:31:17', NULL, NULL, NULL, 0, NULL, 0, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -322,7 +335,7 @@ ALTER TABLE `tbl_post_boost_request`
 -- AUTO_INCREMENT for table `tbl_post_category`
 --
 ALTER TABLE `tbl_post_category`
-  MODIFY `post_category_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `post_category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `tbl_post_image`
 --
@@ -357,7 +370,7 @@ ALTER TABLE `tbl_social_site`
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- Constraints for dumped tables
 --
