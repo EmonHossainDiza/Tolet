@@ -21,6 +21,8 @@ class PostController extends CI_Controller
         $catId=$this->input->post('catId');
         $this->load->model('UserPanel/UserModel');
         $catInfo=$this->UserModel->getCategoryNameStatus($catId);
+
+        $data[] = $this->UserModel->getCategoryNameStatus($catId);
         
         if ($catInfo->post_category_status =="1"){
             $this->load->view('UserPanel/newFamilyPost');
