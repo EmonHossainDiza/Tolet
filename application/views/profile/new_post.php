@@ -36,7 +36,7 @@
 
                                 <option value="">Selcet Post Type</option>
                                 <?php foreach ($catInfo as $cinfo) { ?>
-                                    
+
                                 <option value="<?php echo $cinfo->post_category_id; ?>"><?php echo $cinfo->post_category_name; ?></option>
 
                                 <?php } ?>
@@ -83,6 +83,8 @@
                 $('#post_type_error').hide();
                 $('#postInformation').show();
                 $('#postInformation').html(data);
+                $('#category_id').val(x);
+
             }
         });
     }
