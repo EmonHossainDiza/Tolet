@@ -57,7 +57,9 @@ class PostController extends CI_Controller
             'negotiable_rent' => $this->input->post('negotiable_check'),
             'installment_rent' => $this->input->post('installment_check')
         );
-        $this->db->insert('tbl_users', $data)
+            $this->load->model('UserPanel/PostModel');
+           $SpecificDetailsId= $this->PostModel->insertSpecificDetails($data1);
+
 
         $data2=array(
             'cc_camera' => $this->input->post('cc_camera'),
@@ -70,26 +72,39 @@ class PostController extends CI_Controller
             'geyser' => $this->input->post('geyser')
         );
 
+        $OtherBenefitId= $this->PostModel->insertOtherBenefit($data2);
+
+
         $data3=array(
             'post_category_id' => $this->input->post('category_id'),
             'post_title' => $this->input->post('post_title'),
             'post_phone' => $this->input->post('contact_number'),
-            'post_date_form' => $this->input->post('rent_date'),
+            'post_date_from' => $this->input->post('rent_date'),
             'post_price' => $this->input->post('rent_amount'),
             'post_advance_price' => $this->input->post('advance_rent_amount'),
             'post_description' => $this->input->post('post_description'),
-//            'post_date' => date('Y-m-d'),
             'post_status' => "1",
-            'post_availability' => "1"
+            'post_availability' => "1",
+            'post_specific_details_id' => $SpecificDetailsId,
+            'post_other_benefit_id' => $OtherBenefitId,
         );
 
-        echo "<pre>";
-        print_r($data2);
+        $this->load->library('upload');
+        $config['upload_path'] = './tolet_post/real_img/';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config['max_size'] = '2048';
+        $this->upload->initialize($config);
+        $this->upload->do_upload('post_image');
 
-//        if ($this->db->insert('tbl_users', $data))
-//        {
-//            echo "ok";
-//        }
+        $images = $this->upload->data();
+        $photo= $images['file_name'];
+        thumb('./tolet_post/real_img/'.$photo,'100','100');
+
+
+
+        $post= $this->PostModel->insertPost($data3);
+
+        redirect('New_post');
 
     }
 }
