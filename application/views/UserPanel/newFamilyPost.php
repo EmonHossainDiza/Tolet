@@ -1,3 +1,4 @@
+
 <style type="text/css">
     #property_location_map {
   height: 300px;
@@ -5,119 +6,93 @@
 }
 </style>
 
-<form action="#" method="post" class="submit_form">
+
+<link href="<?php echo base_url()?>assets/css/datepicker.css" rel="stylesheet" media="screen">
+
+
+
+
+<form action="<?php echo base_url()?>Add-Family-Post" enctype="multipart/form-data" method="post" class="submit_form">
+    <input type="hidden" name="category_id" id="category_id" class="form-control">
+
     <div class="basic_information">
         <h4 class="inner-title">Basic Information</h4>
         <div class="row">
             <div class="col-md-12 col-sm-12">
-                <input type="text" placeholder="Property Title" class="form-control">
+                <input type="text" name="post_title" placeholder="Property Title" class="form-control" required>
             </div>
-<!--            <div class="col-md-6 col-sm-6">-->
-<!--                <input type="text" placeholder="Property Status" class="form-control">-->
-<!--            </div>-->
-<!--            <div class="col-md-6 col-sm-6">-->
-<!--                <input type="text" placeholder="Property Types" class="form-control">-->
-<!--            </div>-->
-<!--            <div class="col-md-4 col-sm-4">-->
-<!--                <input type="text" placeholder="Ares (Sqft)" class="form-control">-->
-<!--            </div>-->
-<!--            <div class="col-md-4 col-sm-4">-->
-<!--                <input type="text" placeholder="Price (USD)" class="form-control">-->
-<!--            </div>-->
-<!--            <div class="col-md-4 col-sm-4">-->
-<!--                <input type="text" placeholder="No. Of Rooms" class="form-control">-->
-<!--            </div>-->
-<!--            <div class="col-md-12">-->
-<!--                <div class="important_facts">-->
-<!--                    <label>Do you have any installment system for payment?</label>-->
-<!--                    <div class="radio_check">-->
-<!--                        <input type="checkbox" id="radio_1" name="question" value="Yes">-->
-<!--                        <label for="radio_1"><span>No</span><span>Yes</span></label>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="important_facts">-->
-<!--                    <label>Have any insurance of this property?</label>-->
-<!--                    <div class="radio_check">-->
-<!--                        <input type="checkbox" id="radio_2" name="question" value="Yes">-->
-<!--                        <label for="radio_2"><span>No</span><span>Yes</span></label>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="important_facts">-->
-<!--                    <label>Is there any labilities of third party with this property?</label>-->
-<!--                    <div class="radio_check">-->
-<!--                        <input type="checkbox" id="radio_3" name="question" value="Yes">-->
-<!--                        <label for="radio_3"><span>No</span><span>Yes</span></label>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
         </div>
-        <!-- <div class="alert alert-warning">Please input the correct information of your property. Because it will effect on property search.</div> -->
     </div>
 
 
     <div class="basic_information">
         <h4 class="inner-title">Common Infomation</h4>
         <div class="row">
-
-
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">No. of Room</label>
-                <input type="text" placeholder="No. of Room" class="form-control">
+                <input type="text" name="room_number" placeholder="No. of Room" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
             </div>
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">No. of Bathroom</label>
-                <input type="text" placeholder="No. of Bathroom" class="form-control">
+                <input type="text" name="bathroom_number" placeholder="No. of Bathroom" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
             </div>
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">No. of Balcony</label>
-                <input type="text" placeholder="No. of Balcony" class="form-control">
+                <input type="text" name="balcony_number" placeholder="No. of Balcony" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
             </div>
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">Area (Sqft)</label>
-                <input type="text" placeholder="Area (Sqft)" class="form-control">
+                <input type="text" name="area_sqft" placeholder="Area (Sqft)" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
             </div>
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">Floor</label>
-                <input type="text" placeholder="Floor" class="form-control">
+                <input type="text" name="floor_number" placeholder="Floor" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
             </div>
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">Contact No</label>
-                <input type="text" placeholder="Contact No" class="form-control">
+                <input type="text" name="contact_number" placeholder="Contact No" class="form-control" oninput="this.value = this.value.replace(/[^0-9+]/g, '');" required>
             </div>
+
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">Rent Date</label>
-                <input type="text" placeholder="Rent Date" class="form-control">
+<!--                <input type="text" name="rent_date" placeholder="Rent Date" class="datepicker" data-date-format="mm/dd/yyyy">-->
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' id="eventStartDateTime" name="rent_date" placeholder="dd-mm-yyy"  class="form-control" required/>
+                    <span class="input-group-addon">
+                        <span class="fa fa-calendar"></span>
+                    </span>
+                </div>
             </div>
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">Rent Amount</label>
-                <input type="text" placeholder="Rent Amount" class="form-control">
+                <input type="text" name="rent_amount" placeholder="Rent Amount" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
             </div>
             <div class="col-md-4 col-sm-4">
                 <label for="feature_2">Advance Rent Amount</label>
-                <input type="text" placeholder="Advance Rent Amount" class="form-control">
+                <input type="text" name="advance_rent_amount" placeholder="Advance Rent Amount" class="form-control" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
             </div>
             <div class="col-md-12">
                 <div class="important_facts">
                     <label>Is rent amount negotiable?</label>
                     <div class="radio_check">
-                        <input type="checkbox" id="radio_2" name="question" value="Yes">
+                        <input type="checkbox" name="negotiable_check" id="radio_2" name="question" value="1">
                         <label for="radio_2"><span>No</span><span>Yes</span></label>
                     </div>
                 </div>
                 <div class="important_facts">
                     <label>Do you have any installment system for payment?</label>
                     <div class="radio_check">
-                        <input type="checkbox" id="radio_1" name="question" value="Yes">
+                        <input type="checkbox" name="installment_check" id="radio_1" name="question" value="1">
                         <label for="radio_1"><span>No</span><span>Yes</span></label>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="alert alert-warning">Please input the correct information of your property. Because it will effect on property search.</div> -->
     </div>
 
     <div class="property_location">
-        <h4 class="inner-title">property location</h4>
+        <h4 class="inner-title">Property Location</h4>
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="row">
@@ -188,39 +163,44 @@
             <div class="check_submit">
                 <ul>
                     <li>
-                        <input id="feature_1" type="checkbox" class="submit_checkbox">
+                        <input id="feature_1" name="cc_camera" value="1" type="checkbox" class="submit_checkbox">
                         <label for="feature_1"></label>
                         <span>CC Camera</span>
                     </li>
                     <li>
-                        <input id="feature_2" type="checkbox" class="submit_checkbox">
+                        <input id="feature_2" name="car_parking" value="1" type="checkbox" class="submit_checkbox">
                         <label for="feature_2"></label>
                         <span>Car Parking</span>
                     </li>
                     <li>
-                        <input id="feature_3" type="checkbox" class="submit_checkbox">
+                        <input id="feature_3" name="lift" value="1" type="checkbox" class="submit_checkbox">
                         <label for="feature_3"></label>
                         <span>Lift</span>
                     </li>
                     <li>
-                        <input id="feature_4" type="checkbox" class="submit_checkbox">
+                        <input id="feature_4" name="generator" value="1" type="checkbox" class="submit_checkbox">
                         <label for="feature_4"></label>
-                        <span>Genarator</span>
+                        <span>Generator</span>
                     </li>
                     <li>
-                        <input id="feature_5" type="checkbox" class="submit_checkbox">
+                        <input id="feature_5" name="play_ground" value="1" type="checkbox" class="submit_checkbox">
                         <label for="feature_5"></label>
                         <span>Play Ground</span>
                     </li>
                     <li>
-                        <input id="feature_6" type="checkbox" class="submit_checkbox">
+                        <input id="feature_6" name="water_gas_eclectricity" value="1" type="checkbox" class="submit_checkbox">
                         <label for="feature_6"></label>
                         <span>24x7 Water, Gas, Electricity</span>
                     </li>
                     <li>
-                        <input id="feature_7" type="checkbox" class="submit_checkbox">
+                        <input id="feature_7" name="security_guard" value="1" type="checkbox" class="submit_checkbox">
                         <label for="feature_7"></label>
                         <span>Security Guard</span>
+                    </li>
+                    <li>
+                        <input id="feature_8" name="geyser" value="1" type="checkbox" class="submit_checkbox">
+                        <label for="feature_8"></label>
+                        <span>Geyser</span>
                     </li>
 
                 </ul>
@@ -233,62 +213,46 @@
 
     <div class="description">
         <h4 class="inner-title">Description</h4>
-        <textarea name="description" placeholder="Type Description..." class="form_description"></textarea>
+        <textarea name="post_description" placeholder="Type Description..." class="form_description" required></textarea>
         <div class="alert alert-warning">Need a proper description about the property. So that client can easily understand about the property.</div>
     </div>
 
 
 
     <div class="upload_media">
-<!--        <h4 class="inner-title">Upload Phto and Document</h4>-->
-<!--        <p>Felis etiam erat curabitur bibendum iaculis quisque placerat egestas. Nullam, lacus dis et consectetuer rhoncus etiam. Non vitae turpis curae; lacus sociosqu. Quisque. Lobortis aliquam penatibus mi. </p>-->
         <div class="row">
             <div class="col-md-12">
                 <div class="browse_submit">
                     <span>Add photos</span>
-                    <input type="file" id="fileupload-example-1"/>
+                    <input type="file" name="post_image[]" id="fileupload-example-1"/>
                     <label class="fileupload-example-label" for="fileupload-example-1">Drop your photos here or Click</label>
                 </div>
             </div>
-<!--            <div class="col-md-12">-->
-<!--                <div class="browse_submit">-->
-<!--                    <span>add documents</span>-->
-<!--                    <input type="file" id="fileupload-example-2"/>-->
-<!--                    <label class="fileupload-example-label" for="fileupload-example-2">Drop your document file here or Click</label>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-12">-->
-<!--                <div class="video_upload">-->
-<!--                    <input type="url" placeholder="Add property video links or URL" class="form-control">-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
         <div class="alert alert-warning">Please uplaod the photo of the property, please keep the photo size 760X410 ratio and please upload the PDF or Doc file at the document attachment.</div>
     </div>
 
 
     <div class="property_owner">
-<!--        <h4 class="inner-title">Input Contact Details</h4>-->
-<!--        <p>Felis etiam erat curabitur bibendum iaculis quisque placerat egestas. Nullam, lacus dis et consectetuer rhoncus etiam. Non vitae turpis curae; lacus sociosqu. Quisque. Lobortis aliquam penatibus mi. </p>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-4">-->
-<!--                <input type="text" placeholder="Full Name" class="form-control">-->
-<!--            </div>-->
-<!--            <div class="col-md-4">-->
-<!--                <input type="email" placeholder="Email Address" class="form-control">-->
-<!--            </div>-->
-<!--            <div class="col-md-4">-->
-<!--                <input type="text" placeholder="Phone Number" class="form-control">-->
-<!--            </div>-->
-<!--        </div>-->
         <div class="browse_submit">
-            <button name="submit" class="btn btn-default">submit property</button>
+            <button name="SubmitPost" class="btn btn-default">submit property</button>
             <p><span>note</span> : Your property will under review for 24 Hours after submission *</p>
         </div>
     </div>
 </form>
+
 <!-- To use Geocoding from Google Maps V3 you need to link https://maps.googleapis.com/maps/api/js?sensor=false -->
 <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script> -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhtdWgnJBSZl7DNaIMgPCIf2qhSBW7bWM">
 </script>
 <script src="<?php echo base_url()?>assets/public/post_location.js"></script>
+
+
+<script type="text/javascript" src="<?php echo base_url()?>assets/js/moment.js"></script>
+<script type="text/javascript" src="<?php echo base_url()?>assets/js/datepicker.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+</script>
+

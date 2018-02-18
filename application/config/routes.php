@@ -87,3 +87,6 @@ $route['([a-z 0-9 -]+)'] = 'Language/index/$1';
 // Logout
 $route['Logout'] = 'Logout';
 
+// post
+$route['Add-Family-Post'] = 'UserPanel/PostController/insertFmailyPost';
+
