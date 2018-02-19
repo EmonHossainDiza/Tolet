@@ -74,6 +74,49 @@ class PostController extends CI_Controller
 
         $OtherBenefitId= $this->PostModel->insertOtherBenefit($data2);
 
+        $this->load->library('upload');
+
+        $dataInfo = array();
+        $files = $_FILES;
+
+        $cpt = count($_FILES['post_image']['name']);
+        $data4=array();
+        for($i=0; $i<$cpt; $i++) {
+            $_FILES['post_image']['name'] = $files['post_image']['name'][$i];
+            $_FILES['post_image']['type'] = $files['post_image']['type'][$i];
+            $_FILES['post_image']['tmp_name'] = $files['post_image']['tmp_name'][$i];
+            $_FILES['post_image']['error'] = $files['post_image']['error'][$i];
+            $_FILES['post_image']['size'] = $files['post_image']['size'][$i];
+
+            $this->upload->initialize($this->set_upload_options());
+            $this->upload->do_upload('post_image');
+            // $a=$this->upload->data();
+
+            thumb('./tolet_post/real_img/'.$_FILES['post_image']['name'],'100','100');
+
+
+
+            $data5=array(
+
+                'post_image_name'.($i+1)=>$_FILES['post_image']['name'],
+
+            );
+            $data4=array_merge($data4, $data5);
+
+
+        }
+            $postImageId=$this->PostModel->insertImages($data4);
+
+
+//        $config['upload_path'] = './tolet_post/real_img/';
+//        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+//        $config['max_size'] = '2048';
+//        $this->upload->initialize($config);
+//        $this->upload->do_upload('post_image');
+//
+//        $images = $this->upload->data();
+//        $photo= $images['file_name'];
+//        thumb('./tolet_post/real_img/'.$photo,'100','100');
 
         $data3=array(
             'post_category_id' => $this->input->post('category_id'),
@@ -87,18 +130,8 @@ class PostController extends CI_Controller
             'post_availability' => "1",
             'post_specific_details_id' => $SpecificDetailsId,
             'post_other_benefit_id' => $OtherBenefitId,
+            'post_image_id' => $postImageId,
         );
-
-        $this->load->library('upload');
-        $config['upload_path'] = './tolet_post/real_img/';
-        $config['allowed_types'] = 'gif|jpg|png|jpeg';
-        $config['max_size'] = '2048';
-        $this->upload->initialize($config);
-        $this->upload->do_upload('post_image');
-
-        $images = $this->upload->data();
-        $photo= $images['file_name'];
-        thumb('./tolet_post/real_img/'.$photo,'100','100');
 
 
 
@@ -106,5 +139,17 @@ class PostController extends CI_Controller
 
         redirect('New_post');
 
+    }
+        private function set_upload_options()
+    {
+        //upload an image options
+        $config = array();
+        $config['upload_path'] = './tolet_post/real_img/';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+//       $config['max_size']      = '48000';
+        $config['overwrite']     = FALSE;
+        $config['remove_space']     = True;
+
+        return $config;
     }
 }

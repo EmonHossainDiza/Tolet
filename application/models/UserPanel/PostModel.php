@@ -20,5 +20,11 @@ class PostModel extends CI_Model
         $this->db->insert('tbl_post', $data3);
 
     }
+    public function insertImages($data4)
+    {
+        $this->db->insert('tbl_post_image', $data4);
+        return $this->db->insert_id();
+
+    }
 
 }

@@ -186,7 +186,7 @@
             <div class="col-md-12">
                 <div class="browse_submit">
                     <span>Add photos</span>
-                    <input type="file" name="post_image" id="fileupload-example-1"/>
+                    <input type="file" name="post_image[]" id="fileupload-example-1" multiple/>
                     <label class="fileupload-example-label" for="fileupload-example-1">Drop your photos here or Click</label>
                 </div>
             </div>
