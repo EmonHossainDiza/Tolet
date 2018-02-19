@@ -76,6 +76,15 @@ class PostController extends CI_Controller
             'post_availability' => "1",
             'post_specific_details_id' => $SpecificDetailsId,
             'post_other_benefit_id' => $OtherBenefitId,
+
+            'post_address' => $this->input->post('post_address'),
+            'post_state' => $this->input->post('post_state'),
+            'post_city' => $this->input->post('post_city'),
+            'post_zip' => $this->input->post('post_zip'),
+            'post_division' => $this->input->post('post_division'),
+            'post_country' => $this->input->post('post_country'),
+            'post_lat' => $this->input->post('post_description'),
+            'post_long' => $this->input->post('post_description'),
         );
         $this->load->library('upload');
         $config['upload_path'] = './tolet_post/real_img/';
