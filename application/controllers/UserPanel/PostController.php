@@ -1,20 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class PostController extends CI_Controller
 {
-
     public function __construct()
     {
         parent::__construct();
     }
     public function newPost()
     {
-
     }
     public function getCategory()
     {
-
     }
     public function requiredInfoByCategory()
     {
@@ -43,9 +39,7 @@ class PostController extends CI_Controller
         else{
             echo '';
         }
-
     }
-
     public function insertFmailyPost()
     {
         $data1=array(
@@ -59,8 +53,6 @@ class PostController extends CI_Controller
         );
             $this->load->model('UserPanel/PostModel');
            $SpecificDetailsId= $this->PostModel->insertSpecificDetails($data1);
-
-
         $data2=array(
             'cc_camera' => $this->input->post('cc_camera'),
             'car_parking' => $this->input->post('car_parking'),
@@ -71,8 +63,8 @@ class PostController extends CI_Controller
             'security_guard' => $this->input->post('security_guard'),
             'geyser' => $this->input->post('geyser')
         );
-
         $OtherBenefitId= $this->PostModel->insertOtherBenefit($data2);
+
 
         $this->load->library('upload');
 
@@ -118,6 +110,7 @@ class PostController extends CI_Controller
 //        $photo= $images['file_name'];
 //        thumb('./tolet_post/real_img/'.$photo,'100','100');
 
+
         $data3=array(
             'post_category_id' => $this->input->post('category_id'),
             'post_title' => $this->input->post('post_title'),
@@ -130,15 +123,21 @@ class PostController extends CI_Controller
             'post_availability' => "1",
             'post_specific_details_id' => $SpecificDetailsId,
             'post_other_benefit_id' => $OtherBenefitId,
+
             'post_image_id' => $postImageId,
+
+
+            'post_address' => $this->input->post('post_address'),
+            'post_state' => $this->input->post('post_state'),
+            'post_city' => $this->input->post('post_city'),
+            'post_zip' => $this->input->post('post_zip'),
+            'post_division' => $this->input->post('post_division'),
+            'post_country' => $this->input->post('post_country'),
+            'post_lat_long' => $this->input->post('post_description'),
         );
 
-
-
         $post= $this->PostModel->insertPost($data3);
-
         redirect('New_post');
-
     }
         private function set_upload_options()
     {

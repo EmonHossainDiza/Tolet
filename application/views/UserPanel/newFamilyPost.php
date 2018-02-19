@@ -1,4 +1,12 @@
 
+<style type="text/css">
+    #property_location_map {
+  height: 300px;
+  border: 1px solid #000;
+}
+</style>
+
+
 <link href="<?php echo base_url()?>assets/css/datepicker.css" rel="stylesheet" media="screen">
 
 
@@ -6,6 +14,7 @@
 
 <form action="<?php echo base_url()?>Add-Family-Post" enctype="multipart/form-data" method="post" class="submit_form">
     <input type="hidden" name="category_id" id="category_id" class="form-control">
+
     <div class="basic_information">
         <h4 class="inner-title">Basic Information</h4>
         <div class="row">
@@ -87,37 +96,67 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="row">
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-12 col-sm-12">
                         <label for="feature_2">Property Adddress</label>
-                        <input type="text" placeholder="Property Adddress" class="form-control">
+                        <input type="text" placeholder="House 1, Road 10" class="form-control" name="post_address" id="post_address" value="House 1, Road 10">
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <label for="feature_2">State</label>
-                        <input type="text" placeholder="State" class="form-control">
+                        <input type="text" placeholder="Nikunja 2" class="form-control" name="post_state" id="post_state" value="Nikunja 2">
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <label for="feature_2">City</label>
-                        <input type="text" placeholder="City" class="form-control">
+                        <input type="text" placeholder="Khilkhet" class="form-control" name="post_city" id="post_city" value="Khilkhet">
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <label for="feature_2">Zip Code</label>
-                        <input type="text" placeholder="Zip Code" class="form-control">
+                        <input type="text" placeholder="1229" class="form-control" name="post_zip" id="post_zip" value="1229">
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <label for="feature_2">Division</label>
+                        <select class="selectpicker form-control" data-live-search="true" name="post_division" id="post_division">
+                            <option value="">Selcet Division</option>
+                            <option value="Barisal">Barisal</option>
+                            <option value="Chittagong">Chittagong</option>
+                            <option value="Dhaka" selected="selected">Dhaka</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Mymensingh">Mymensingh</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Sylhet">Sylhet</option>
+                        </select>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <label for="feature_2">Select City</label>
-                        <select class="selectpicker form-control" data-live-search="true">
-                            <option>Selcet Country</option>
-                            <option>USA</option>
-                            <option>Germany</option>
-                            <option>Netherland</option>
-                            <option>France</option>
-                            <option>England</option>
+                        <select class="selectpicker form-control" data-live-search="true" name="post_country" id="post_country">
+                            <!-- <option>Selcet Country</option> -->
+                            <option value="Bangladesh">Bangladesh</option>
                         </select>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-4">
+                        <label for="feature_2">.</label>
+                        <span id="property_location_map_btn" class="btn btn-warning" onclick="get_property_location_map()">Get Map</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- address map start -->
+    <div id="property_location_map_lat_long">
+        
+    </div>
+
+    <div id="property_location_map" style="display: none;">
+        
+    </div>
+    <!-- address map end -->
+
+
+
 
     <div class="check_feature">
         <h4 class="inner-title">check feature</h4>
@@ -203,6 +242,13 @@
     </div>
 </form>
 
+<!-- To use Geocoding from Google Maps V3 you need to link https://maps.googleapis.com/maps/api/js?sensor=false -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script> -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhtdWgnJBSZl7DNaIMgPCIf2qhSBW7bWM">
+</script>
+<script src="<?php echo base_url()?>assets/public/post_location.js"></script>
+
+
 <script type="text/javascript" src="<?php echo base_url()?>assets/js/moment.js"></script>
 <script type="text/javascript" src="<?php echo base_url()?>assets/js/datepicker.min.js"></script>
 <script type="text/javascript">
@@ -210,10 +256,4 @@
         $('#datetimepicker1').datetimepicker();
     });
 </script>
-<!---->
-<!--<script>-->
-<!--    $('.datepicker').datepicker({-->
-<!--        format: 'mm/dd/yyyy',-->
-<!--        startDate: '-3d'-->
-<!--    });-->
-<!--</script>-->
+
